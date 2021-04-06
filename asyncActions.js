@@ -55,6 +55,7 @@ const reducer = (state = initialState, action) => {
       };
   }
 };
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^API call using middleware redux-thank^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 /*
 const fetchUsers = () => {
   return function (dispatch) {
@@ -74,7 +75,7 @@ const fetchUsers = () => {
 const store = createStore(reducer /*, applyMiddleware(thunkMiddleware)*/);
 store.subscribe(() => console.log(store.getState()));
 //store.dispatch(fetchUsers());
-
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^API call without using redux-thank^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 const fetchUsers = () => {
   store.dispatch(fetchUsersRequest());
   axios
